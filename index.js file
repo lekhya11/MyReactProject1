@@ -1,0 +1,19 @@
+const function1 = (num) => num * 20;
+const AddOfTwoNum = (add) => add.a + add.b;
+const num = 3;
+const add = { a: 10, b: 50 };
+const element = (
+  <>
+    <h1 className="heading">
+      {" "}
+      20 times of the given {num} is {function1(num)}{" "}
+    </h1>
+    <p>
+      {" "}
+      addition of two numbers using object {add.a} and {add.b} is{" "}
+      {AddOfTwoNum(add)}{" "}
+    </p>
+  </>
+);
+
+ReactDOM.render(element, document.getElementById("root"));
